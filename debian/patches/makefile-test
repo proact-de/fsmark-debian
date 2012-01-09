@@ -1,0 +1,27 @@
+Description: Temporarily disable test target.
+ This patch temporarily removes the test target for initial package
+ development and until further discussion to which extent these
+ tests should be carried out on build machines.
+Author: Martin Steigerwald <ms@teamix.de>
+
+Index: fsmark/Makefile
+===================================================================
+--- fsmark.orig/Makefile	2012-01-09 16:31:32.335726257 +0100
++++ fsmark/Makefile	2012-01-09 16:31:41.143752913 +0100
+@@ -25,11 +25,11 @@
+ 	install -d $(BIN)
+ 	install ./fs_mark $(BIN)
+ 
+-test: fs_mark
+-	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096
+-	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -r 
+-	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -D 128
+-	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -r -D 128
++#test: fs_mark
++#	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096
++#	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -r
++#	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -D 128
++#	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -r -D 128
+ 
+ clean:
+ 	rm -f ${COBJS} fs_mark fs_log.txt
