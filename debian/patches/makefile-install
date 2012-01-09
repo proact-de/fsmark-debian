@@ -1,0 +1,29 @@
+Description: Add install target with $(DESTDIR) support.
+  This patch adds a install target to the makefile which
+  installs the binary to $(DESTDIR)/usr/bin.
+Author: Martin Steigerwald <ms@teamix.de>
+
+Index: fsmark/Makefile
+===================================================================
+--- fsmark.orig/Makefile	2012-01-09 15:44:04.043832167 +0100
++++ fsmark/Makefile	2012-01-09 16:31:32.335726257 +0100
+@@ -12,6 +12,8 @@
+ COBJS= fs_mark.o lib_timing.o
+ CFLAGS= -O2 -Wall -D_FILE_OFFSET_BITS=64
+ 
++BIN=$(DESTDIR)/usr/bin
++
+ all: fs_mark 
+ 
+ fs_mark.o: fs_mark.c fs_mark.h
+@@ -19,6 +21,10 @@
+ fs_mark: fs_mark.o lib_timing.o
+ 	${CC} -static -o fs_mark fs_mark.o lib_timing.o
+ 
++install:
++	install -d $(BIN)
++	install ./fs_mark $(BIN)
++
+ test: fs_mark
+ 	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096
+ 	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -r 
