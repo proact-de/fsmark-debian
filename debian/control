@@ -1,15 +1,18 @@
 Source: fsmark
-Section: unknown
-Priority: extra
+Section: utils
+Priority: optional
 Maintainer: Martin Steigerwald <ms@teamix.de>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.2
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://git.debian.org/collab-maint/fsmark.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/fsmark.git;a=summary
+Homepage: http://sourceforge.net/projects/fsmark/
+Vcs-Git: git://git.debian.org/collab-maint/fsmark.git
+Vcs-Browser: http://git.debian.org/?p=collab-maint/fsmark.git;a=summary
 
 Package: fsmark
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: benchmark for simulating synchronous write workloads
+ The fs_mark benchmark tests synchronous write workloads. It can vary
+ the number of files, directory depth, etc. It has detailed timings
+ for reads, writes, unlinks and fsyncs that make it good for simulating
+ mail servers and other setups.
