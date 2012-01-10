@@ -1,5 +1,10 @@
-fsmark (3.3-1) unstable; urgency=low
+fsmark (3.3-1) UNRELEASED; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release (Closes: #655224)
+  * Makefile:
+    * patches/makefile-install: Add install target with $(DESTDIR) support
+    * patches/makefile-test: Temporarily disable test target
+    * patches/makefile-dynamiclinking: Change makefile to link the
+      executable dynamically
 
- -- Martin Steigerwald <ms@teamix.de>  Mon, 09 Jan 2012 15:54:25 +0100
+ -- Martin Steigerwald <ms@teamix.de>  Tue, 10 Jan 2012 10:42:25 +0100
