@@ -1,0 +1,14 @@
+Description: Change makefile to link the executable dynamically.
+ This patch changes the makefile to link the executable dynamically.
+Author: Martin Steigerwald <ms@teamix.de>
+--- a/Makefile
++++ b/Makefile
+@@ -19,7 +19,7 @@
+ fs_mark.o: fs_mark.c fs_mark.h
+ 
+ fs_mark: fs_mark.o lib_timing.o
+-	${CC} -static -o fs_mark fs_mark.o lib_timing.o
++	${CC} -o fs_mark fs_mark.o lib_timing.o
+ 
+ install:
+ 	install -d $(BIN)

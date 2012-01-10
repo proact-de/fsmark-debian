@@ -1,2 +1,3 @@
 makefile-install
 makefile-test
+makefile-dynamiclinking
