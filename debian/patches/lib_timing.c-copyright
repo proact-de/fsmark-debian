@@ -1,0 +1,34 @@
+Description: Changes license to GPL v2 without additional restrictions
+ This patch changes the license of lib_timing.c to GPL v2 without
+ additional restrictions. It reflects the license change Carl Staelin
+ and Larry McVoy did on 11th of January 2012 (see debian/copyright).
+Author: Martin Steigerwald <ms@teamix.de>
+Index: fsmark/lib_timing.c
+===================================================================
+--- fsmark.orig/lib_timing.c	2012-01-09 15:44:04.047832178 +0100
++++ fsmark/lib_timing.c	2012-01-16 11:28:05.687771742 +0100
+@@ -7,10 +7,20 @@
+  *
+  * Copyright (c) 2000 Carl Staelin.
+  * Copyright (c) 1994-1998 Larry McVoy.
+- * Distributed under the FSF GPL with
+- * additional restriction that results may published only if
+- * (1) the benchmark is unmodified, and
+- * (2) the version in the sccsid below is included in the report.
++ *
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License as published by
++ * the Free Software Foundation; either version 2 of the License, or
++ * (at your option) any later version.
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; If not, see <http://www.gnu.org/licenses/>.
++ *
+  * Support for this development by Sun Microsystems is gratefully acknowledged.
+  */
+ 

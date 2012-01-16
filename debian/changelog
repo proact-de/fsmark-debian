@@ -6,5 +6,8 @@ fsmark (3.3-1) UNRELEASED; urgency=low
     * patches/makefile-test: Temporarily disable test target
     * patches/makefile-dynamiclinking: Change makefile to link the
       executable dynamically
+  * debian/copyright and patches/lib_timing.c-copyright: Document the
+    license change that Carl Staelin and Larry McVoy kindly agreed to.
+    Many thanks.
 
- -- Martin Steigerwald <ms@teamix.de>  Tue, 10 Jan 2012 10:42:25 +0100
+ -- Martin Steigerwald <ms@teamix.de>  Mon, 16 Jan 2012 11:42:25 +0100

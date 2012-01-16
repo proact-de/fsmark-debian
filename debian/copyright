@@ -45,13 +45,6 @@ Files: lib_timing.c
 Copyright: 2000 Carl Staelin
            1994-1998 Larry McVoy
 License: GPL-2+
- Distributed under the FSF GPL with additional restriction that results
- may published only if
- (1) the benchmark is unmodified, and
- (2) the version in the sccsid below is included in the report.
- .
- Support for this development by Sun Microsystems is gratefully acknowledged.
- .
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation; either version 2 of the License, or
@@ -67,4 +60,25 @@ License: GPL-2+
  .
  On Debian systems, the complete text of the GNU General
  Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
-
+Comment:
+ Carl Staelin and Larry McVoy kindly changed the license from GPL without
+ version with additional restrictions to GPL version 2 or later without
+ additional restrictions (see debian/patches/lib_timing.c-copyright and
+ the ITP: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=655224#32):
+ .
+ ------- Forwarded message -------
+ .
+ Subject: Re: Fwd: Re: ITP fsmark - bug 655224: License restriction for 
+ lib_timing.c DFSG compliant?
+ Date: Wednesday, 11. January 2012, 11:59:10
+ Von: Carl Staelin <…@google.com>
+ An:  Martin Steigerwald <ms@teamix.de>
+ Cc:  Larry McVoy <…@bitmover.com>, Ric Wheeler <…@redhat.com>
+ .
+ For the bits of lmbench that were used by fsmark - namely lib_timing.c -, we
+ are happy to give it a GPL 2 (or later) license without any additional
+ restrictions.
+ .
+ Cheers,
+ .
+ Carl

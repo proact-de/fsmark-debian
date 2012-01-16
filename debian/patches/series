@@ -1,3 +1,4 @@
 makefile-install
 makefile-test
 makefile-dynamiclinking
+lib_timing.c-copyright
