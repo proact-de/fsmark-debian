@@ -21,8 +21,16 @@ Keep files after each iteration.
 .BI \-F
 Run until filesystem is full.
 .TP
-.BI \-S Sync Method
-(0:No Sync, 1:fsyncBeforeClose, 2:sync/1_fsync, 3:PostReverseFsync, 4:syncPostReverseFsync, 5:PostFsync, 6:syncPostFsync)
+.BI \-S Syncmethod
+Method to be used for synchronizing changes to disk:
+.IP
+0: No Sync
+1: fsyncBeforeClose
+2: sync/1_fsync
+3: PostReverseFsync
+4: syncPostReverseFsync
+5: PostFsync
+6: syncPostFsync
 .TP
 .BI \-D number
 Use \fInumber\fR subdirectories.
