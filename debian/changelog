@@ -10,6 +10,7 @@ fsmark (3.3-1) UNRELEASED; urgency=low
     license change that Carl Staelin and Larry McVoy kindly agreed to.
     Many thanks.
   * debian/fs_mark.1: Manpage, generated with help2man and revised
-    manually
+    manually.
+  * debian/watch: Watch file using a sourceforge mirror.
 
  -- Martin Steigerwald <ms@teamix.de>  Mon, 26 Mar 2012 15:46:25 +0200
