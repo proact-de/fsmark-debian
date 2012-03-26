@@ -23,13 +23,20 @@ Run until filesystem is full.
 .TP
 .BI \-S Syncmethod
 Method to be used for synchronizing changes to disk:
-.IP
+.NR step 1 1
+.IP \n[step] 7
 0: No Sync
+.IP \n+[step]
 1: fsyncBeforeClose
+.IP \n+[step]
 2: sync/1_fsync
+.IP \n+[step]
 3: PostReverseFsync
+.IP \n+[step]
 4: syncPostReverseFsync
+.IP \n+[step]
 5: PostFsync
+.IP \n+[step]
 6: syncPostFsync
 .TP
 .BI \-D number
