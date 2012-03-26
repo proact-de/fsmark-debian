@@ -9,5 +9,7 @@ fsmark (3.3-1) UNRELEASED; urgency=low
   * debian/copyright and patches/lib_timing.c-copyright: Document the
     license change that Carl Staelin and Larry McVoy kindly agreed to.
     Many thanks.
+  * debian/fs_mark.1: Manpage, generated with help2man and revised
+    manually
 
- -- Martin Steigerwald <ms@teamix.de>  Mon, 16 Jan 2012 11:42:25 +0100
+ -- Martin Steigerwald <ms@teamix.de>  Mon, 26 Mar 2012 15:46:25 +0200
