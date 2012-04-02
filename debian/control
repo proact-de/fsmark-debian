@@ -3,7 +3,7 @@ Section: utils
 Priority: optional
 Maintainer: Martin Steigerwald <ms@teamix.de>
 Build-Depends: debhelper (>= 8.0.0)
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://sourceforge.net/projects/fsmark/
 Vcs-Git: git://git.debian.org/collab-maint/fsmark.git
 Vcs-Browser: http://git.debian.org/?p=collab-maint/fsmark.git;a=summary
