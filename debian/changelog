@@ -1,4 +1,4 @@
-fsmark (3.3-1) UNRELEASED; urgency=low
+fsmark (3.3-1) unstable; urgency=low
 
   * Initial release (Closes: #655224)
   * Makefile:
