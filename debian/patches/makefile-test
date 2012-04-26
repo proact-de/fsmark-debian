@@ -1,13 +1,15 @@
 Description: Makefile: Make test target work during building the package.
  This patch changes the test directory paths, creates the directories,
  removes them after the test and adds a value to the argument -r in
- order to make the test target work in during dpkg-buildpackage.
+ order to make the test target work in during dpkg-buildpackage. Also
+ reduced number and size of files a bit to reduce space consumption
+ during the tests.
 Author: Martin Steigerwald <ms@teamix.de>
 
 Index: fsmark/Makefile
 ===================================================================
---- fsmark.orig/Makefile	2012-04-26 16:42:14.756815557 +0200
-+++ fsmark/Makefile	2012-04-26 16:46:39.328910106 +0200
+--- fsmark.orig/Makefile	2012-04-26 17:00:04.000000000 +0200
++++ fsmark/Makefile	2012-04-26 17:01:27.329227451 +0200
 @@ -6,8 +6,8 @@
  # Modifications include using fsync after wrting to flush to disk and changes to check return
  # values from syscalls.
@@ -23,13 +25,15 @@ Index: fsmark/Makefile
  	install ./fs_mark $(BIN)
  
  test: fs_mark
-+	mkdir -p ${DIR1} ${DIR2}
- 	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096
+-	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096
 -	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -r 
-+	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -r 20
- 	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -D 128
+-	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -D 128
 -	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -r -D 128
-+	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -r 20 -D 128
++	mkdir -p ${DIR1} ${DIR2}
++	./fs_mark -d ${DIR1} -d ${DIR2} -s 40960 -n 2048
++	./fs_mark -d ${DIR1} -d ${DIR2} -s 40960 -n 2048 -r 20
++	./fs_mark -d ${DIR1} -d ${DIR2} -s 40960 -n 2048 -D 128
++	./fs_mark -d ${DIR1} -d ${DIR2} -s 40960 -n 2048 -r 20 -D 128
 +	rm -rf ${DIR1} ${DIR2}
  
  clean:
