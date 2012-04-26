@@ -3,7 +3,8 @@ fsmark (3.3-1) unstable; urgency=low
   * Initial release (Closes: #655224)
   * Makefile:
     * patches/makefile-install: Add install target with $(DESTDIR) support
-    * patches/makefile-test: Temporarily disable test target
+    * patches/makefile-test: Make test target work during
+      dpkg-buildpackage
     * patches/makefile-dynamiclinking: Change makefile to link the
       executable dynamically
   * debian/copyright and patches/lib_timing.c-copyright: Document the
@@ -13,4 +14,4 @@ fsmark (3.3-1) unstable; urgency=low
     manually.
   * debian/watch: Watch file using a sourceforge mirror.
 
- -- Martin Steigerwald <ms@teamix.de>  Mon, 02 Apr 2012 15:24:25 +0200
+ -- Martin Steigerwald <ms@teamix.de>  Thu, 26 Apr 2012 16:53:00 +0200
