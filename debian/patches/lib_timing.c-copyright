@@ -5,8 +5,8 @@ Description: Changes license to GPL v2 without additional restrictions
 Author: Martin Steigerwald <ms@teamix.de>
 Index: fsmark/lib_timing.c
 ===================================================================
---- fsmark.orig/lib_timing.c	2012-01-09 15:44:04.047832178 +0100
-+++ fsmark/lib_timing.c	2012-01-16 11:28:05.687771742 +0100
+--- fsmark.orig/lib_timing.c	2012-04-26 16:24:18.428430911 +0200
++++ fsmark/lib_timing.c	2012-04-26 16:44:18.000000000 +0200
 @@ -7,10 +7,20 @@
   *
   * Copyright (c) 2000 Carl Staelin.
