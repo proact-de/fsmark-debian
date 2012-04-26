@@ -71,9 +71,9 @@ Comment:
  Subject: Re: Fwd: Re: ITP fsmark - bug 655224: License restriction for 
  lib_timing.c DFSG compliant?
  Date: Wednesday, 11. January 2012, 11:59:10
- Von: Carl Staelin <…@google.com>
- An:  Martin Steigerwald <ms@teamix.de>
- Cc:  Larry McVoy <…@bitmover.com>, Ric Wheeler <…@redhat.com>
+ From: Carl Staelin <…@google.com>
+ To:   Martin Steigerwald <ms@teamix.de>
+ Cc:   Larry McVoy <…@bitmover.com>, Ric Wheeler <…@redhat.com>
  .
  For the bits of lmbench that were used by fsmark - namely lib_timing.c -, we
  are happy to give it a GPL 2 (or later) license without any additional
