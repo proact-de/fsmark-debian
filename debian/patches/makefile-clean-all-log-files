@@ -1,0 +1,9 @@
+--- a/Makefile
++++ b/Makefile
+@@ -32,5 +32,5 @@
+ 	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -r -D 128
+ 
+ clean:
+-	rm -f ${COBJS} fs_mark fs_log.txt
++	rm -f ${COBJS} fs_mark fs_log.txt fs_log.txt.[0-9]*
+ 
