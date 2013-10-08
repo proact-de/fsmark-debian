@@ -1,6 +1,5 @@
 makefile-install
 makefile-hardening
-makefile-clean-all-log-files
 makefile-test
 makefile-dynamiclinking
 lib_timing.c-copyright
