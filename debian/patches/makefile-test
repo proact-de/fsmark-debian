@@ -18,7 +18,7 @@ Author: Martin Steigerwald <ms@teamix.de>
 +DIR2= test/dir2
  
  COBJS= fs_mark.o lib_timing.o
- CFLAGS= -O2 -Wall -D_FILE_OFFSET_BITS=64
+ CFLAGS+= -O2 -Wall -D_FILE_OFFSET_BITS=64
 @@ -26,10 +26,12 @@
  	install ./fs_mark $(BIN)
  
