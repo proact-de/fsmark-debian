@@ -6,10 +6,8 @@ Description: Makefile: Make test target work during building the package.
  during the tests.
 Author: Martin Steigerwald <ms@teamix.de>
 
-Index: fsmark/Makefile
-===================================================================
---- fsmark.orig/Makefile	2012-04-26 17:00:04.000000000 +0200
-+++ fsmark/Makefile	2012-04-26 17:01:27.329227451 +0200
+--- a/Makefile
++++ b/Makefile
 @@ -6,8 +6,8 @@
  # Modifications include using fsync after wrting to flush to disk and changes to check return
  # values from syscalls.
@@ -30,10 +28,10 @@ Index: fsmark/Makefile
 -	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -D 128
 -	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -r -D 128
 +	mkdir -p ${DIR1} ${DIR2}
-+	./fs_mark -d ${DIR1} -d ${DIR2} -s 40960 -n 2048
-+	./fs_mark -d ${DIR1} -d ${DIR2} -s 40960 -n 2048 -r 20
-+	./fs_mark -d ${DIR1} -d ${DIR2} -s 40960 -n 2048 -D 128
-+	./fs_mark -d ${DIR1} -d ${DIR2} -s 40960 -n 2048 -r 20 -D 128
++	./fs_mark -d ${DIR1} -d ${DIR2} -s 4096 -n 512
++	./fs_mark -d ${DIR1} -d ${DIR2} -s 4096 -n 512 -r 20
++	./fs_mark -d ${DIR1} -d ${DIR2} -s 4096 -n 512 -D 128
++	./fs_mark -d ${DIR1} -d ${DIR2} -s 4096 -n 512 -r 20 -D 128
 +	rm -rf ${DIR1} ${DIR2}
  
  clean:
