@@ -19,9 +19,9 @@ Author: Martin Steigerwald <ms@teamix.de>
 +DIR1= dir1
 +DIR2= dir2
  
- COBJS= fs_mark.o lib_timing.o
- CFLAGS+= -O2 -Wall -D_FILE_OFFSET_BITS=64
-@@ -26,11 +27,14 @@
+ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+ DPKG_EXPORT_BUILDFLAGS = 1
+@@ -30,11 +31,14 @@
  	install ./fs_mark $(BIN)
  
  test: fs_mark

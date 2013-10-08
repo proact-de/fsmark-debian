@@ -3,7 +3,7 @@ Description: Change makefile to link the executable dynamically.
 Author: Martin Steigerwald <ms@teamix.de>
 --- a/Makefile
 +++ b/Makefile
-@@ -20,7 +20,7 @@
+@@ -24,7 +24,7 @@
  fs_mark.o: fs_mark.c fs_mark.h
  
  fs_mark: fs_mark.o lib_timing.o
