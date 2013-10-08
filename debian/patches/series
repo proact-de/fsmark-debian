@@ -1,5 +1,5 @@
 makefile-install
-makefile-use-cflags
+makefile-use-flags
 makefile-hardening
 makefile-test
 makefile-dynamiclinking
