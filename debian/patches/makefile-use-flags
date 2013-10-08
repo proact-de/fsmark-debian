@@ -9,7 +9,7 @@ Author: Martin Steigerwald <ms@teamix.de>
  
  fs_mark: fs_mark.o lib_timing.o
 -	${CC} -static -o fs_mark fs_mark.o lib_timing.o
-+	${CC} ${CFLAGS} -static -o fs_mark fs_mark.o lib_timing.o
++	${CC} ${CFLAGS} ${LDFLAGS} -static -o fs_mark fs_mark.o lib_timing.o
  
  install:
  	install -d $(BIN)
