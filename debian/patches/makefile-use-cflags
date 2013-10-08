@@ -1,0 +1,15 @@
+Description: Add actually use CFLAGS.
+Author: Martin Steigerwald <ms@teamix.de>
+
+
+--- a/Makefile
++++ b/Makefile
+@@ -19,7 +19,7 @@
+ fs_mark.o: fs_mark.c fs_mark.h
+ 
+ fs_mark: fs_mark.o lib_timing.o
+-	${CC} -static -o fs_mark fs_mark.o lib_timing.o
++	${CC} ${CFLAGS} -static -o fs_mark fs_mark.o lib_timing.o
+ 
+ install:
+ 	install -d $(BIN)
