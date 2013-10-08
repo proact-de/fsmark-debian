@@ -4,7 +4,12 @@ fsmark (3.3-2) UNRELEASED; urgency=low
     * makefile-test: Reduce number and size of files to make automatic
       tests significantly shorter.
     * makefile-clean-all-log-files: Really clean all fs_mark log files.
-    * makefile-hardening: Only add to CFLAGS to allow for hardening flags.
+    * makefile-use-flags: Actually use CFLAGS and LDFLAGS to allow for
+      hardening options to be passed through.
+    * makefile-hardening: Only add to flags to allow for hardening flags.
+  * Use debhelper version 9.
+  * Use canonical VCS URLs.
+  * Updated Standards-Version to 3.9.4.
 
  -- Martin Steigerwald <ms@teamix.de>  Tue, 08 Oct 2013 10:03:22 +0200
 
