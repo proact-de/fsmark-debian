@@ -1,3 +1,7 @@
+Description: Really clean all log files.
+  fs_mark creates log files aka fs_log.txt.6550.
+Author: Martin Steigerwald <ms@teamix.de>
+
 --- a/Makefile
 +++ b/Makefile
 @@ -32,5 +32,5 @@
