@@ -29,7 +29,7 @@ Author: Martin Steigerwald <ms@teamix.de>
 -	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -r 
 -	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -D 128
 -	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -r -D 128
-+	mkdir -p ${DIR1} ${DIR2}
++	mkdir -p ${ROOTDIR}/${DIR1} ${ROOTDIR}/${DIR2}
 +	./fs_mark -d ${ROOTDIR}/${DIR1} -d ${ROOTDIR}/${DIR2} -s 4096 -n 512
 +	./fs_mark -d ${ROOTDIR}/${DIR1} -d ${ROOTDIR}/${DIR2} -s 4096 -n 512 -r 20
 +	./fs_mark -d ${ROOTDIR}/${DIR1} -d ${ROOTDIR}/${DIR2} -s 4096 -n 512 -D 128
