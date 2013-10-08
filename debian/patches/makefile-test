@@ -35,4 +35,4 @@ Author: Martin Steigerwald <ms@teamix.de>
 +	rm -rf ${DIR1} ${DIR2}
  
  clean:
- 	rm -f ${COBJS} fs_mark fs_log.txt
+ 	rm -f ${COBJS} fs_mark fs_log.txt fs_log.txt.[0-9]*
