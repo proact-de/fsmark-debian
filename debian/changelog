@@ -1,4 +1,4 @@
-fsmark (3.3-2) UNRELEASED; urgency=low
+fsmark (3.3-2) unstable; urgency=low
 
   * Makefile patches:
     * makefile-test: Reduce number and size of files to make automatic
