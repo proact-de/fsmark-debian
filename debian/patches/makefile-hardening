@@ -5,14 +5,9 @@ Author: Martin Steigerwald <ms@teamix.de>
 
 --- a/Makefile
 +++ b/Makefile
-@@ -9,8 +9,12 @@
- DIR1= /test/dir1
+@@ -10,7 +10,7 @@
  DIR2= /test/dir2
  
-+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
-+DPKG_EXPORT_BUILDFLAGS = 1
-+include /usr/share/dpkg/buildflags.mk
-+
  COBJS= fs_mark.o lib_timing.o
 -CFLAGS= -O2 -Wall -D_FILE_OFFSET_BITS=64
 +CFLAGS+= -O2 -Wall -D_FILE_OFFSET_BITS=64
