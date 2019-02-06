@@ -1,43 +1,27 @@
-Description: Makefile: Make test target work during building the package.
- This patch changes the test directory paths, creates the directories,
- removes them after the test and adds a value to the argument -r in
- order to make the test target work in during dpkg-buildpackage. Also
- reduced number and size of files a bit to reduce space consumption
- during the tests. Also make sure to delete all files the test leaves
- around.
-Author: Martin Steigerwald <ms@teamix.de>
+Description: Makefile: Disable test in order to ease workload on build servers.
+Author: Martin Steigerwald <martin.steigerwald@proact.de
 
 --- a/Makefile
 +++ b/Makefile
-@@ -6,8 +6,9 @@
+@@ -6,8 +6,6 @@
  # Modifications include using fsync after wrting to flush to disk and changes to check return
  # values from syscalls.
  #
 -DIR1= /test/dir1
 -DIR2= /test/dir2
-+ROOTDIR= test
-+DIR1= dir1
-+DIR2= dir2
  
  COBJS= fs_mark.o lib_timing.o
  CFLAGS+= -O2 -Wall -D_FILE_OFFSET_BITS=64
-@@ -26,11 +27,14 @@
+@@ -25,12 +23,6 @@
+ 	install -d $(BIN)
  	install ./fs_mark $(BIN)
  
- test: fs_mark
+-test: fs_mark
 -	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096
 -	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -r 
 -	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -D 128
 -	./fs_mark -d ${DIR1} -d ${DIR2} -s 51200 -n 4096 -r -D 128
-+	mkdir -p ${ROOTDIR}/${DIR1} ${ROOTDIR}/${DIR2}
-+	./fs_mark -d ${ROOTDIR}/${DIR1} -d ${ROOTDIR}/${DIR2} -s 4096 -n 512
-+	./fs_mark -d ${ROOTDIR}/${DIR1} -d ${ROOTDIR}/${DIR2} -s 4096 -n 512 -r 20
-+	./fs_mark -d ${ROOTDIR}/${DIR1} -d ${ROOTDIR}/${DIR2} -s 4096 -n 512 -D 128
-+	./fs_mark -d ${ROOTDIR}/${DIR1} -d ${ROOTDIR}/${DIR2} -s 4096 -n 512 -r 20 -D 128
-+	rm -rf ${ROOTDIR}
- 
+-
  clean:
--	rm -f ${COBJS} fs_mark fs_log.txt
-+	rm -f ${COBJS} fs_mark fs_log.txt fs_log.txt.[0-9]*
-+	rm -rf ${ROOTDIR}
+ 	rm -f ${COBJS} fs_mark fs_log.txt
  

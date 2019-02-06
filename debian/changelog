@@ -11,6 +11,8 @@ fsmark (3.3-3) UNRELEASED; urgency=medium
   * control:
     * Updated maintainer mail address.
     * Use https protocol in Homepage field.
+  * patches:
+    * makefile-test: Disable test in order to ease workload on build servers.
 
  -- Ondřej Nový <onovy@debian.org>  Mon, 01 Oct 2018 10:13:32 +0200
 
