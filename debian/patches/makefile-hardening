@@ -1,6 +1,6 @@
 Description: Change makefile to build with hardening flags.
   This patch changes the makefile with hardening flags. It fixes lintian
-  lintian tags hardening-no-relro and hardening-no-fortify-functions.
+  tags hardening-no-relro and hardening-no-fortify-functions.
 Author: Martin Steigerwald <ms@teamix.de>
 
 --- a/Makefile
