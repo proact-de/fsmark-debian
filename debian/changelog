@@ -12,6 +12,9 @@ fsmark (3.3-3) unstable; urgency=medium
     * Updated maintainer mail address.
     * Use https protocol in Homepage field.
     * Update debhelper minimum version.
+  * copyright:
+    * License text for GPL-2+ only at one place.
+    * Use https protocol in Source field.
   * patches:
     * makefile-test: Disable test in order to ease workload on build servers.
 
