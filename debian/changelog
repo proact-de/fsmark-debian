@@ -15,6 +15,7 @@ fsmark (3.3-3) unstable; urgency=medium
   * copyright:
     * License text for GPL-2+ only at one place.
     * Use https protocol in Source field.
+    * Update my copyright entry.
   * patches:
     * makefile-test: Disable test in order to ease workload on build servers.
 

@@ -8,7 +8,7 @@ Copyright: 2003-2004 EMC Corporation
 License: GPL-2+
 
 Files: debian/*
-Copyright: 2012 Martin Steigerwald <ms@teamix.de>
+Copyright: 2012-2019 Martin Steigerwald <martin.steigerwald@proact.de>
 License: GPL-2+
 
 Files: lib_timing.c
