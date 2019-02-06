@@ -11,6 +11,7 @@ fsmark (3.3-3) UNRELEASED; urgency=medium
   * control:
     * Updated maintainer mail address.
     * Use https protocol in Homepage field.
+    * Update debhelper minimum version.
   * patches:
     * makefile-test: Disable test in order to ease workload on build servers.
 
