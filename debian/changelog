@@ -10,6 +10,7 @@ fsmark (3.3-3) UNRELEASED; urgency=medium
   * Merged changes by Ondřej Nový, thank you.
   * control:
     * Updated maintainer mail address.
+    * Use https protocol in Homepage field.
 
  -- Ondřej Nový <onovy@debian.org>  Mon, 01 Oct 2018 10:13:32 +0200
 

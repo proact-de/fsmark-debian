@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Martin Steigerwald <martin.steigerwald@proact.de>
 Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1.1)
 Standards-Version: 3.9.4
-Homepage: http://sourceforge.net/projects/fsmark/
+Homepage: https://sourceforge.net/projects/fsmark/
 Vcs-Git: https://salsa.debian.org/debian/fsmark.git
 Vcs-Browser: https://salsa.debian.org/debian/fsmark
 
