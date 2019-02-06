@@ -1,6 +1,6 @@
 fsmark (3.3-3) UNRELEASED; urgency=medium
 
-  [ Ondřej Nový ] 
+  [ Ondřej Nový ]
   * d/copyright: Use https protocol in Format field
   * d/rules: Remove trailing whitespaces
   * d/control: Set Vcs-* to salsa.debian.org
